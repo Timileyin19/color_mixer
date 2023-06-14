@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Color Mixer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h1>Color Mixer</h1>
+            <div id="colorBox">RGB(255, 0, 0)</div>
+            <div>
+                <label for="red">Red:</label> <br />
+                <input type="range" id="red" min="0" max="255" value="255" step="1">
+                <div id="redVal"></div>
+            </div>
+            <div>
+                <label for="green text-center">Green:</label> <br />
+                <input type="range" id="green" min="0" max="255" value="0" step="1">
+                <div id="greenVal"></div>
+            </div>
+            <div>
+                <label for="blue">Blue:</label> <br />
+                <input type="range" id="blue" min="0" max="255" value="0" step="1">
+                <div id="blueVal"></div>
+            </div>
+            <div>
+                <label for="alpha">Alpha:</label> <br />
+                <input type="range" id="alpha" min="0.1" max="0.99" value="1" step="0.11">
+                <div id="alphaVal"></div>
+            </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>

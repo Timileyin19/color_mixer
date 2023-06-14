@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+}
+
+.container {
+  width: 500px;
+  background-color: #fff;
+  padding: 30px;
+  margin: 10px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+div {
+  margin-bottom: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="range"] {
+  width: 100%;
+}
+
+#colorBox {
+  width: 100%;
+  height: 50px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  margin-bottom: 24px;
+  /* background-color: rgb(255, 0, 0); */
+  /* color: white; */
+}
+
+#redVal,
+#greenVal,
+#blueVal,
+#alphaVal {
+  margin-top: 5px;
+}
+
+#redVal::after,
+#greenVal::after,
+#blueVal::after,
+#alphaVal::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+#redVal::after {
+  background-color: rgb(255, 0, 0);
+}
+
+#greenVal::after {
+  background-color: rgb(0, 128, 0);
+}
+
+#blueVal::after {
+  background-color: rgb(0, 0, 255);
+}
+
+#alphaVal::after {
+  background-color: rgba(255, 0, 0, 0.5);
+}
